@@ -1,0 +1,368 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fb;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1f2937;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+.navbar-brand {
+    font-size: 21px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    max-width: 1200px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+    font-weight: 700;
+    color: #111827;
+}
+
+
+/* =========================
+   STATISTICS CARDS
+========================= */
+
+.stat-card {
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.stat-title {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.stat-number {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-box {
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    padding: 12px 15px;
+    transition: 0.3s;
+}
+
+.search-box:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    border: none;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.table thead {
+    background: #eef2ff;
+}
+
+.table thead th {
+    color: #374151;
+    font-weight: 600;
+    border: none;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8faff;
+    transform: scale(1.005);
+}
+
+
+/* =========================
+   EDIT / DELETE BUTTONS
+========================= */
+
+.btn-warning {
+    background: #f59e0b;
+    border: none;
+    color: white;
+}
+
+.btn-warning:hover {
+    background: #d97706;
+    color: white;
+}
+
+.btn-danger {
+    background: #ef4444;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+.form-control {
+    border-radius: 9px;
+    padding: 11px 14px;
+    border: 1px solid #d1d5db;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   ALERTS
+========================= */
+
+.alert {
+    border: none;
+    border-radius: 10px;
+    animation: slideDown 0.4s ease;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .stat-card {
+        margin-bottom: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 17px;
+    }
+
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5,
+        #7c3aed
+    );
+}
+
+
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 20px;
+}
+
+
+.login-card {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+
+    animation: loginAppear 0.6s ease;
+}
+
+
+.login-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef2ff;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+
+.login-card h2 {
+    font-weight: 700;
+}
+
+
+.login-card .form-control {
+    padding: 13px;
+
+    border-radius: 10px;
+}
+
+
+.login-card .form-control:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+.login-btn {
+    padding: 13px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+
+
+@keyframes loginAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
